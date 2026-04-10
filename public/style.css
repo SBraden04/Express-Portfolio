@@ -219,6 +219,15 @@ body {
 .skill-card img {
     width: 32px;
     height: 32px;
+    filter: invert(1);
+}
+.skill-card img[src*="html5"],
+.skill-card img[src*="css3"],
+.skill-card img[src*="javascript"],
+.skill-card img[src*="nodejs"],
+.skill-card img[src*="react"],
+.skill-card img[src*="git"] {
+    filter: none;
 }
 .skill-card:hover {
     border-color: #1e90ff;
