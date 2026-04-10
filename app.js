@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 // Middleware
 const logger = require('./middleware/morgan');
@@ -10,12 +11,10 @@ const port = 3000;
 app.use(logger);
 
 // Serve static files from the "public" directory
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+module.exports = app;
