@@ -5,7 +5,7 @@ const path = require('path');
 const logger = require('./middleware/morgan');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 // Use morgan logger middleware
 app.use(logger);
