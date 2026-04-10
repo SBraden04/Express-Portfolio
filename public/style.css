@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'Monaco';
+    src: url('/font/monaco/Monaco.ttf') format('truetype');
+}
+/* Header uses relative positioning for absolute centering of nav */
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #3C3C3C;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+.container {
+    color: #d4d4d4;
+    font-family: 'Monaco', monospace;
+    background-color: #1E1E1E;
+    padding: 0;
+    margin: 0 0 48px;
+    border-radius: 12px;
+    /* Drop shadow makes the terminal "float" above the page */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    border: 1px solid #3c3c3c;
+}
+
+
+.flex-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 20px;
+}
+.flex-content h1 {
+    margin-top: 0;
+    display: inline;
+}
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.disabled {
+    color: #555;
+    pointer-events: none;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex-buttons {
+    display: flex;
+    gap: 10px;
+}
+.div.red {
+    background-color: #ff605b;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.div.yellow {
+    background-color: #f2c045;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.div.green {
+    background-color: #00ca4e;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.profile-image {
+    background-color: rgba(85, 85, 85, 0.3);
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    img {
+        filter: grayscale();
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.profile-footer {
+    padding-left: 5px;
+    width: 100%;
+}
+.profile-footer h2 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.profile-footer p {
+    margin: 5px 0;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* ── Page shell: VS Code dark theme ─────────────────────────────────── */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Monaco', monospace;
+}
+.page {
+    /* Centres everything and gives the page some breathing room */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 24px 0;
+}
+
+/* ── Mac terminal window ─────────────────────────────────────────────── */
+/* .container is now an inset card on the page, not the whole page */
+
+/* ── Sections outside the terminal ──────────────────────────────────── */
+/* VS Code sidebar / panel tones */
+.section {
+    padding: 48px 0;
+    border-top: 1px solid #2d2d2d;
+}
+
+/* Section comment-style heading, matches VS Code #6a9955 comment green */
+.section-title {
+    color: #6a9955;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* ── Shared button ───────────────────────────────────────────────────── */
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #1e90ff;
+    border: 1px solid #1e90ff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Monaco', monospace;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.btn:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ── Hero ────────────────────────────────────────────────────────────── */
+/* Hero re-uses the existing .flex-content + .info layout */
+.tagline {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.hero-cta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ── About ───────────────────────────────────────────────────────────── */
+.about-bio {
+    line-height: 1.7;
+    max-width: 680px;
+    color: #ccc;
+    margin-top: 0;
+}
+.about-facts {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #aaa;
+}
+/* Terminal-style prompt prefix on each fact */
+.about-facts li::before {
+    content: '> ';
+    color: #00ca4e;
+}
+
+/* ── Skills ──────────────────────────────────────────────────────────── */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px 20px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid #3C3C3C;
+    border-radius: 8px;
+    min-width: 80px;
+    font-size: 13px;
+    color: #ccc;
+    /* Place a <img src="icons/x.svg" alt=""> above the <span> label */
+}
+.skill-card img {
+    width: 32px;
+    height: 32px;
+}
+.skill-card:hover {
+    border-color: #1e90ff;
+}
+
+/* ── Projects ────────────────────────────────────────────────────────── */
+.projects-grid {
+    display: grid;
+    /* Auto-fills columns; each card is at least 260px wide */
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid #3C3C3C;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color 0.2s;
+}
+.project-card:hover {
+    border-color: #1e90ff;
+}
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+.project-title {
+    margin: 0;
+    font-size: 15px;
+}
+.project-links {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.project-link {
+    font-size: 12px;
+}
+.project-desc {
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.6;
+    flex: 1; /* pushes tags to the bottom of the card */
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+}
+.tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    background-color: rgba(30, 144, 255, 0.15);
+    color: #1e90ff;
+    border-radius: 4px;
+}
+
+/* ── Education ───────────────────────────────────────────────────────── */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.education-item {
+    border-left: 2px solid #3C3C3C;
+    padding-left: 16px;
+}
+.edu-school {
+    margin: 0 0 4px;
+    font-size: 15px;
+}
+.edu-degree {
+    margin: 0 0 4px;
+    color: #ccc;
+    font-size: 14px;
+}
+.edu-date {
+    margin: 0;
+    color: #6a9955; /* green like a comment — graduation date */
+    font-size: 13px;
+}
+
+/* ── Contact ─────────────────────────────────────────────────────────── */
+.contact-body {
+    max-width: 560px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-group label {
+    font-size: 13px;
+    color: #aaa;
+}
+.form-group input,
+.form-group textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #3C3C3C;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Monaco', monospace;
+    font-size: 13px;
+    padding: 8px 12px;
+    resize: vertical;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+}
+.contact-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+.contact-link {
+    font-size: 14px;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────── */
+/* Sits at the bottom of the page, not inside the terminal */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #2d2d2d;
+    margin-top: 8px;
+}
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+.footer-copy {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}

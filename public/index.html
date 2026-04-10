@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braden Sampson | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+    <!-- ╔══════════════════════════════════════════════════════════════╗
+         ║  MAC TERMINAL WINDOW — hero only lives inside here           ║
+         ╚══════════════════════════════════════════════════════════════╝ -->
+    <div class="container">
+
+        <!-- ── Mac-style title bar ──────────────────────────────────────
+             Traffic-light dots are decorative.
+             Nav links scroll to sections below the terminal.
+        ──────────────────────────────────────────────────────────────── -->
+        <div class="header">
+            <div class="flex-buttons">
+                <div class="div red"></div>
+                <div class="div yellow"></div>
+                <div class="div green"></div>
+            </div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <!-- ── HERO ─────────────────────────────────────────────────────
+             Left  → profile image + name card
+             Right → headline, tagline, CTA buttons
+             CTAs: "View Projects" (scrolls down) / "Download CV" (PDF)
+        ──────────────────────────────────────────────────────────────── -->
+        <div class="content">
+            <section id="home" class="hero-section">
+                <div class="flex-content">
+
+                    <!-- Profile sidebar -->
+                    <div>
+                        <div class="profile-image">
+                            <img src="images/profile.png" alt="Profile Image">
+                        </div>
+                        <div class="profile-footer">
+                            <h2>Braden Sampson</h2>
+                            <p>Junior Web Developer</p>
+                        </div>
+                    </div>
+
+                    <!-- Hero text -->
+                    <div class="info">
+                        <h1><!-- Headline: e.g. "Hi, I'm Braden." --></h1>
+                        <!-- Short punchy tagline – 1 or 2 sentences max -->
+                        <p class="tagline"><!-- e.g. "I build clean, responsive web experiences." --></p>
+                        <!-- CTA buttons -->
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn">View Projects</a>
+                            <!-- <a href="/resume.pdf" class="btn" download>Download CV</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </div><!-- /.container  (terminal window ends here) -->
+
+    <!-- ══ SECTIONS BELOW live outside the terminal on the VS Code themed page ══ -->
+
+        <!-- ══════════════════════════════════════════════════════════════
+             ABOUT  (#about)
+             A few paragraphs about who you are, what drives you,
+             and what kind of role you're looking for.
+             .about-facts is a quick-glance list (location, availability…).
+             Tip: keep bio to ~3–5 sentences — recruiters skim.
+        ══════════════════════════════════════════════════════════════ -->
+    <section id="about" class="section about-section">
+            <h2 class="section-title">// about</h2>
+            <div class="about-body">
+                <p class="about-bio"><!-- Bio text here --></p>
+                <ul class="about-facts">
+                    <li><!-- 📍 Location: City, Province --></li>
+                    <li><!-- 🎓 Graduating: Month Year --></li>
+                    <li><!-- 💼 Open to: Junior / Internship roles --></li>
+                    <li><!-- ⚡ Interests: e.g. open-source, UI design --></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             SKILLS  (#skills)
+             Display your tech stack as icon + label cards.
+             Group by category if you have many (Languages / Frameworks / Tools).
+             Icon tip: grab free SVG icons from https://devicons.dev
+             Add one .skill-card per technology you're comfortable with.
+        ══════════════════════════════════════════════════════════════ -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title">// skills</h2>
+            <div class="skills-grid">
+                <!-- Each card: optional <img src="icons/html5.svg" alt=""> then a <span> label -->
+                <div class="skill-card"><span>HTML5</span></div>
+                <div class="skill-card"><span>CSS3</span></div>
+                <div class="skill-card"><span>JavaScript</span></div>
+                <div class="skill-card"><span>Node.js</span></div>
+                <div class="skill-card"><span>Express</span></div>
+                <div class="skill-card"><span>React</span></div>
+                <div class="skill-card"><span>Next.js</span></div>
+                <div class="skill-card"><span>Git</span></div>
+                <!-- Add more skill cards here -->
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             PROJECTS  (#projects)
+             Showcase 3–6 of your best projects.
+             Each .project-card has:
+               • Title + links (GitHub repo / live demo)
+               • Short description – what it does and why you built it
+               • Tech tags – the stack used in that project
+             Order by most impressive first.
+        ══════════════════════════════════════════════════════════════ -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">// projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title"><!-- Project Name -->Hrm Skate Spots</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled" target="_blank" disabled><s>GitHub</s></a>
+                            <a href="https://project-hrm-skate-spots-taupe.vercel.app/" class="project-link" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <p class="project-desc"><!-- What it does and what you learned -->HRM Skate Spots helps skaters across the Halifax Regional Municipality discover, share, and review the best spots to ride.</p>
+
+                    <p class="project-desc">It's built with React and Next.js, leveraging modern web technologies for a seamless user experience. It uses Supabase for backend services and authentication.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title"><!-- Project Name --></h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">GitHub</a>
+                            <a href="#" class="project-link" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <p class="project-desc"><!-- Description --></p>
+                    <div class="project-tags">
+                        <span class="tag"><!-- Tech --></span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title"><!-- Project Name --></h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">GitHub</a>
+                            <a href="#" class="project-link" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <p class="project-desc"><!-- Description --></p>
+                    <div class="project-tags">
+                        <span class="tag"><!-- Tech --></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             EDUCATION  (#education)
+             Your degree(s), school(s), and any relevant certificates
+             or online courses (freeCodeCamp, Coursera, etc.).
+             Add one .education-item per entry, most recent first.
+        ══════════════════════════════════════════════════════════════ -->
+        <section id="education" class="section education-section">
+            <h2 class="section-title">// education</h2>
+            <div class="education-list">
+
+                <div class="education-item">
+                    <h3 class="edu-school"><!-- School / Institution Name --></h3>
+                    <p class="edu-degree"><!-- Diploma / Degree / Program Name --></p>
+                    <p class="edu-date"><!-- e.g. Sept 2022 – April 2026 --></p>
+                    <!-- Optional: <p class="edu-notes">Notable coursework, GPA, honours</p> -->
+                </div>
+
+                <!-- Add more .education-item blocks for certs / bootcamps -->
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CONTACT  (#contact)
+             Two options scaffolded — use one or both:
+
+             Option A – HTML form POSTing to /contact
+               • Add a POST route in app.js
+               • Use the "nodemailer" package to email yourself
+               • Always validate + sanitize input server-side
+               • app.use(express.urlencoded({ extended: true }))
+                 then req.body.name / .email / .message
+
+             Option B – Direct social / mailto links (no server logic)
+               • Uncomment the .contact-links below
+        ══════════════════════════════════════════════════════════════ -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">// contact</h2>
+            <div class="contact-body">
+
+                <!-- Option A: contact form -->
+                <form class="contact-form" action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Say hello..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <!-- Option B: direct links (email / GitHub / LinkedIn) -->
+                <div class="contact-links">
+                    <!-- <a href="mailto:you@email.com" class="contact-link">Email</a> -->
+                    <!-- <a href="https://github.com/yourusername" class="contact-link" target="_blank">GitHub</a> -->
+                    <!-- <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank">LinkedIn</a> -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── FOOTER ────────────────────────────────────────────────────
+             Social links left, copyright right.
+        ──────────────────────────────────────────────────────────────── -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="https://github.com/SBraden04" target="_blank">GitHub</a> 
+                <!-- <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> -->
+            </div>
+            <p class="footer-copy">&copy; 2026 Braden Sampson</p>
+        </footer>
+
+    </div><!-- /.page -->
+</body>
+</html>
