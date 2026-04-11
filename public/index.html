@@ -212,12 +212,24 @@
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
+                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                <script>
+                    const params = new URLSearchParams(window.location.search);
+                    const feedback = document.getElementById('form-feedback');
+                    if (params.get('sent') === 'true') {
+                        feedback.textContent = '> Message sent. I\'ll get back to you soon.';
+                        feedback.classList.add('feedback-success');
+                    } else if (params.get('sent') === 'false') {
+                        feedback.textContent = '> Something went wrong. Please try again.';
+                        feedback.classList.add('feedback-error');
+                    }
+                </script>
 
                 <!-- Option B: direct links (email / GitHub / LinkedIn) -->
                 <div class="contact-links">
                     <!-- <a href="mailto:you@email.com" class="contact-link">Email</a> -->
-                    <!-- <a href="https://github.com/yourusername" class="contact-link" target="_blank">GitHub</a> -->
-                    <!-- <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank">LinkedIn</a> -->
+                    <a href="https://github.com/SBraden04" target="_blank">GitHub</a> 
+                    <a href="https://www.linkedin.com/in/braden-sampson/" target="_blank">LinkedIn</a>  
                 </div>
 
             </div>

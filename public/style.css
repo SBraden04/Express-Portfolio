@@ -351,6 +351,17 @@ body {
 .contact-link {
     font-size: 14px;
 }
+.form-feedback {
+    margin: 12px 0 0;
+    font-size: 13px;
+    min-height: 1em;
+}
+.feedback-success {
+    color: #00ca4e;
+}
+.feedback-error {
+    color: #ff605b;
+}
 
 /* ── Footer ──────────────────────────────────────────────────────────── */
 /* Sits at the bottom of the page, not inside the terminal */
