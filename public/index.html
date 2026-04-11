@@ -56,7 +56,6 @@
                     <!-- Hero text -->
                     <div class="info">
                         <h1>Hi, I'm Braden. I'm a Junior Web Developer at NSCC.</h1>
-                        <!-- Short punchy tagline – 1 or 2 sentences max -->
                         <p class="tagline">I build clean, responsive web experiences, focusing on modern web technologies and best practices.</p>
                         <!-- CTA buttons -->
                         <div class="hero-cta">
@@ -72,22 +71,14 @@
 
     </div><!-- /.container  (terminal window ends here) -->
 
-    <!-- ══ SECTIONS BELOW live outside the terminal on the VS Code themed page ══ -->
 
-        <!-- ══════════════════════════════════════════════════════════════
-             ABOUT  (#about)
-             A few paragraphs about who you are, what drives you,
-             and what kind of role you're looking for.
-             .about-facts is a quick-glance list (location, availability…).
-             Tip: keep bio to ~3–5 sentences — recruiters skim.
-        ══════════════════════════════════════════════════════════════ -->
     <section id="about" class="section about-section">
             <h2 class="section-title">// about</h2>
             <div class="about-body">
                 <p class="about-bio">I'm a passionate Junior Web Developer. I enjoy working with modern web technologies and continuously improving my skills.</p>
                 <ul class="about-facts">
                     <li>Lower Sackville, Nova Scotia</li>
-                    <li></li>
+                    <li>Bilingual: English & French</li>
                     <li>Open to: Junior / Internship roles</li>
                     <li>Interests: open-source, API development</li>
                 </ul>
@@ -96,15 +87,10 @@
 
         <!-- ══════════════════════════════════════════════════════════════
              SKILLS  (#skills)
-             Display your tech stack as icon + label cards.
-             Group by category if you have many (Languages / Frameworks / Tools).
-             Icon tip: grab free SVG icons from https://devicons.dev
-             Add one .skill-card per technology you're comfortable with.
         ══════════════════════════════════════════════════════════════ -->
         <section id="skills" class="section skills-section">
             <h2 class="section-title">// skills</h2>
             <div class="skills-grid">
-                <!-- Each card: optional <img src="icons/html5.svg" alt=""> then a <span> label -->
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" /><span>HTML5</span></div>
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" /><span>CSS3</span></div>
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" /><span>JavaScript</span></div>
@@ -113,18 +99,17 @@
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /><span>React</span></div>
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg" /><span>Next.js</span></div>
                 <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg" /><span>Git</span></div>
-                <!-- Add more skill cards here -->
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg" /><span>PHP</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" /><span>MySQL</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" /><span>MongoDB</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-plain.svg" /><span>Supabase</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" /><span>TypeScript</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" /><span>Vercel</span></div>
             </div>
         </section>
 
         <!-- ══════════════════════════════════════════════════════════════
              PROJECTS  (#projects)
-             Showcase 3–6 of your best projects.
-             Each .project-card has:
-               • Title + links (GitHub repo / live demo)
-               • Short description – what it does and why you built it
-               • Tech tags – the stack used in that project
-             Order by most impressive first.
         ══════════════════════════════════════════════════════════════ -->
         <section id="projects" class="section projects-section">
             <h2 class="section-title">// projects</h2>
@@ -134,7 +119,6 @@
                     <div class="project-header">
                         <h3 class="project-title">Hrm Skate Spots</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link disabled" target="_blank" disabled><s>GitHub</s></a>
                             <a href="https://project-hrm-skate-spots-taupe.vercel.app/" class="project-link" target="_blank">Live</a>
                         </div>
                     </div>
@@ -151,29 +135,35 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title"><!-- Project Name --></h3>
+                        <h3 class="project-title">Portfolio</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">GitHub</a>
-                            <a href="#" class="project-link" target="_blank">Live</a>
+                            <a href="https://github.com/SBraden04/Express-Portfolio" class="project-link" target="_blank">GitHub</a>
+                            <a href="https://bradensampson.dev" class="project-link" target="_blank">Live</a>
                         </div>
                     </div>
-                    <p class="project-desc"><!-- Description --></p>
+                    <p class="project-desc">Personal portfolio website built with Node.js and Express, served as static files and deployed to Vercel with a custom domain configured through Cloudflare.</p>
                     <div class="project-tags">
-                        <span class="tag"><!-- Tech --></span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">Cloudflare</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title"><!-- Project Name --></h3>
+                        <h3 class="project-title">World Cities Database</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">GitHub</a>
-                            <a href="#" class="project-link" target="_blank">Live</a>
+                            <a href="https://github.com/SBraden04/INET2005-assignment-SBraden04" class="project-link" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <p class="project-desc"><!-- Description --></p>
+                    <p class="project-desc">A PHP and MySQL web application for viewing, searching, inserting, updating, and deleting city records from the MySQL world sample database. Features include pagination, sticky search forms, client-side validation, and session-based authentication with hashed passwords.</p>
                     <div class="project-tags">
-                        <span class="tag"><!-- Tech --></span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                     </div>
                 </div>
 
@@ -182,19 +172,15 @@
 
         <!-- ══════════════════════════════════════════════════════════════
              EDUCATION  (#education)
-             Your degree(s), school(s), and any relevant certificates
-             or online courses (freeCodeCamp, Coursera, etc.).
-             Add one .education-item per entry, most recent first.
         ══════════════════════════════════════════════════════════════ -->
         <section id="education" class="section education-section">
             <h2 class="section-title">// education</h2>
             <div class="education-list">
 
                 <div class="education-item">
-                    <h3 class="edu-school"><!-- School / Institution Name --></h3>
-                    <p class="edu-degree"><!-- Diploma / Degree / Program Name --></p>
-                    <p class="edu-date"><!-- e.g. Sept 2022 – April 2026 --></p>
-                    <!-- Optional: <p class="edu-notes">Notable coursework, GPA, honours</p> -->
+                    <h3 class="edu-school">NSCC Institute of Technology</h3>
+                    <p class="edu-degree">IT Web Programming | Diploma</p>
+                    <p class="edu-date">Sept 2024 - Present</p>
                 </div>
 
                 <!-- Add more .education-item blocks for certs / bootcamps -->
@@ -204,17 +190,7 @@
 
         <!-- ══════════════════════════════════════════════════════════════
              CONTACT  (#contact)
-             Two options scaffolded — use one or both:
-
-             Option A – HTML form POSTing to /contact
-               • Add a POST route in app.js
-               • Use the "nodemailer" package to email yourself
-               • Always validate + sanitize input server-side
-               • app.use(express.urlencoded({ extended: true }))
-                 then req.body.name / .email / .message
-
-             Option B – Direct social / mailto links (no server logic)
-               • Uncomment the .contact-links below
+             Two options scaffolded
         ══════════════════════════════════════════════════════════════ -->
         <section id="contact" class="section contact-section">
             <h2 class="section-title">// contact</h2>
@@ -253,7 +229,7 @@
         <footer class="footer">
             <div class="footer-links">
                 <a href="https://github.com/SBraden04" target="_blank">GitHub</a> 
-                <!-- <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> -->
+                <a href="https://www.linkedin.com/in/braden-sampson/" target="_blank">LinkedIn</a> 
             </div>
             <p class="footer-copy">&copy; 2026 Braden Sampson</p>
         </footer>
